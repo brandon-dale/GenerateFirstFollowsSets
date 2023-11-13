@@ -3,9 +3,6 @@ Contains the declaration and implementation of the Grammar Class
 Author: Brandon Dale
 File: Grammar.py
 Date: 11 November, 2023
-
-When Reading in grammars from the JSON File, the names of all non-terminals
-must be surrounded by angle brackets (ex: <non-terminal-name>).
 """
 
 
