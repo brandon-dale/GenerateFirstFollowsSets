@@ -1,0 +1,74 @@
+[
+  {
+    "overview": "<program> -> begin <stmt_list> end",
+    "lhs": "<program>",
+    "rhs": ["begin", "<stmt_list>", "end"],
+    "number": 1
+  },
+  {
+    "overview": "<stmt_list> -> <stmt> <stmt_tail>",
+    "lhs": "<stmt_list>",
+    "rhs": ["<stmt>", "<stmt_tail>"],
+    "number": 2
+  },
+  {
+    "overview": "<stmt_tail> -> ; <stmt_list>",
+    "lhs": "<stmt_tail>",
+    "rhs": [";", "<stmt_list>"],
+    "number": 3
+  },
+  {
+    "overview": "<stmt_tail> -> lambda",
+    "lhs": "<stmt_tail>",
+    "rhs": [],
+    "number": 4
+  },
+  {
+    "overview": "<stmt> -> <var> = <expression>",
+    "lhs": "<stmt>",
+    "rhs": ["<var>", "=", "<expression>"],
+    "number": 5
+  },
+  {
+    "overview": "<var> -> A",
+    "lhs": "<var>",
+    "rhs": ["A"],
+    "number": 6
+  },
+  {
+    "overview": "<var> -> B",
+    "lhs": "<var>",
+    "rhs": ["B"],
+    "number": 7
+  },
+  {
+    "overview": "<var> -> C",
+    "lhs": "<var>",
+    "rhs": ["C"],
+    "number": 8
+  },
+  {
+    "overview": "<expression> -> <var> <expr_tail>",
+    "lhs": "<expression>",
+    "rhs": ["<var>", "<expr_tail>"],
+    "number": 9
+  },
+  {
+    "overview": "<expr_tail> -> + <var> <expr_tail>",
+    "lhs": "<expr_tail>",
+    "rhs": ["+", "<var>", "<expr_tail>"],
+    "number": 10
+  },
+  {
+    "overview": "<expr_tail> -> * <var> <expr_tail>",
+    "lhs": "<expr_tail>",
+    "rhs": ["*", "<var>", "<expr_tail>"],
+    "number": 11
+  },
+  {
+    "overview": "<expr_tail> -> lambda",
+    "lhs": "<expr_tail>",
+    "rhs": [],
+    "number": 12
+  }
+]
