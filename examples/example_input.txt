@@ -1,0 +1,3 @@
+1 <program> -> LPAREN_T <define> LPAREN_T <more_defines> EOF_T
+2 <more_defines> -> <define> LPAREN_T <more_defines>
+3 <more_defines> -> IDENT_T <stmt_list> RPAREN_T
